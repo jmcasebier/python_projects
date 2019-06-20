@@ -23,8 +23,8 @@ def begin_game():
 def game_over():
     play_again = input('\nPlay again? (y or n): ')
     #verify yes or no response
-    yes_or_no = ('y', 'n', 'yes', 'no')
-    while play_again.lower() not in yes_or_no:
+    y_or_n = ('y', 'n')
+    while play_again.lower() not in y_or_n:
         play_again = input('\nPlease enter y to play again or n to exit: ')
 
     #respond to user selection
