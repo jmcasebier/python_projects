@@ -15,7 +15,7 @@ def clear():
 def begin_game():
     clear()
     #introduce game
-    print('Welcome to Rock-Paper-Scissors-Lizard-Spock!')
+    print('\nWelcome to Rock-Paper-Scissors-Lizard-Spock!')
     show_moves()
     get_moves()
 
@@ -37,20 +37,23 @@ def game_over():
 #display rules on request
 def show_rules():
     clear()
-    rules = '***Rules***\n\nScissors cut Paper,\nPaper covers Rock,\nRock '
-    rules += 'crushes Lizard,\nLizard poisons Spock,\nSpock smashes Scissors,'
-    rules += '\nScissors decapitate Lizard,\nLizard eats Paper,\nPaper '
-    rules += 'disproves Spock,\nSpock vaporizes Rock,\nand '
+    rules = '\n\n  Scissors cut Paper,\n  Paper covers Rock,\n  Rock'
+    rules += ' crushes Lizard,\n  Lizard poisons Spock,\n  Spock smashes '
+    rules += 'Scissors,\n  Scissors decapitate Lizard,\n  Lizard eats Paper,'
+    rules += '\n  Paper disproves Spock,\n  Spock vaporizes Rock,\n  and '
     rules += 'Rock crushes Scissors.\n\n'
+    print('\n  *****Rules*****')
     print(rules)
     #prompt user to close rules with q
-    quit_rules = input('Press Enter to return to the game...')
+    quit_rules = input('  Press Enter to return to the game...')
     begin_game()
 
 #introduce all possible moves
 def show_moves():
-    print('\n1 - Rock\n2 - Paper\n3 - Scissors\n4 - Lizard\n5 - Spock\n'
-    + '# - Rules\n')
+    print('\n****************************')
+    print('\n  1 - Rock\n  2 - Paper\n  3 - Scissors\n  4 - Lizard\n  5 - Spock'
+    + '\n  # - Rules\n')
+    print('****************************\n')
 
 #prompt user for move selection
 def get_moves():
