@@ -40,7 +40,7 @@ def show_rules():
     rules = '***Rules***\n\nScissors cut Paper,\nPaper covers Rock,\nRock '
     rules += 'crushes Lizard,\nLizard poisons Spock,\nSpock smashes Scissors,'
     rules += '\nScissors decapitate Lizard,\nLizard eats Paper,\nPaper '
-    rules += 'disproves Spock,\nSpock vaporizes Rock,\nand as it always has,\n'
+    rules += 'disproves Spock,\nSpock vaporizes Rock,\nand '
     rules += 'Rock crushes Scissors.\n\n'
     print(rules)
     #prompt user to close rules with q
