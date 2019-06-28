@@ -11,7 +11,7 @@ name = input()
 number = randint(1, 20)
 print('Well, ' + name + ', I am thinking of a number between 1 and 20.')
 
-while guessesTaken < 6:
+while guessesTaken < 5:
     if guessesTaken == 0:
         print('Take a guess.')
     else:
