@@ -19,6 +19,7 @@ def meet_player():
 
 #introduce game
 def greet_player():
+    clear()
     print('Well, ' + player + ', I am thinking of a number between 1 and 20.')
 
 #start new game with same player
@@ -36,7 +37,7 @@ def begin_game():
     while guessesTaken < 5:
         #get guess from user
         if guessesTaken == 0:
-            print('Take a guess.')
+            print('\nTake a guess.')
         else:
             print('Take another guess.')
 
@@ -44,7 +45,7 @@ def begin_game():
 
         #allow each number to be guessed only once
         while guess in guesses:
-            print('You already guessed ' + str(guess) +'.')
+            print('\nYou already guessed ' + str(guess) +'.')
             print('Try a different number.')
             guess = int(input())
 
@@ -54,14 +55,15 @@ def begin_game():
 
         #give user feedback about guess
         if guess < number and guessesTaken <= 4:
-            print('Your guess is too low.')
+            print('\nYour guess is too low.')
         if guess > number and guessesTaken <= 4:
-            print('Your guess is too high.')
+            print('\nYour guess is too high.')
         if guess == number:
             break
 
     #user guessed number
     if guess == number:
+        clear()
         if guessesTaken == 1:
             message = ' guess!'
         else:
@@ -73,17 +75,18 @@ def begin_game():
 
     #user ran out of guesses
     if guess != number:
+        clear()
         number = str(number)
         print('Nope. The number I was thinking of was ' + number + '.')
         game_over()
 
 #play again or exit
 def game_over():
-    print('Would you like to play again? (y / n)')
+    print('\nWould you like to play again? (y / n)')
     again = input()
     y_n = ['y', 'n']
     while again.lower() not in y_n:
-        print('I don\'t understand.')
+        print('\nI don\'t understand.')
         print('Please enter \'y\' to play again or \'n\' to exit.')
         again = input()
     if again.lower() == 'y':
