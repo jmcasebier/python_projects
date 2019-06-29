@@ -28,7 +28,7 @@ def game_over():
         play_again = input('\nPlease enter y to play again or n to exit: ')
 
     #respond to user selection
-    if play_again.lower() == 'y' or play_again.lower() == 'yes':
+    if play_again.lower() == 'y':
         begin_game()
     else:
         clear()
