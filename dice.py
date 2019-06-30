@@ -5,6 +5,9 @@ import turtle
 from random import randrange
 
 def main():
+    turtle.speed(0)
+    turtle.color('black', 'white')
+    turtle.bgcolor('#3d3d3d')
     #choose random numbers for di faces
     face_1 = randrange(1, 7)
     face_2 = randrange(1, 7)
@@ -22,9 +25,11 @@ def draw_square(x, y, size):
     turtle.goto(x, y)
     turtle.setheading(0)
     turtle.pendown()
+    turtle.begin_fill()
     for i in range(4):
         turtle.forward(size)
         turtle.left(90)
+    turtle.end_fill()
 
 #draw di faces
 def draw_dot(x, y, size):
