@@ -58,5 +58,5 @@ if __name__ == '__main__':
                 print('The winner is the', t.color()[0], 'turtle!')
                 break;
 
-    turtle.update() #render image
-turtle.exitonclick() #wait for mouse click
+    turtle.update()
+turtle.exitonclick()

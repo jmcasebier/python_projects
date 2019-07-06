@@ -29,9 +29,9 @@ while not done:
     if pressed[pygame.K_LEFT]: x -= 3
     if pressed[pygame.K_RIGHT]: x += 3
 
-    screen.fill((0, 0, 0))
+    #screen.fill((0, 0, 0))
     color = (r, g, b)
-    pygame.draw.rect(screen, color, pygame.Rect(x, y, 60, 60))
+    pygame.draw.rect(screen, color, pygame.Rect(x, y, 5, 5))
 
     pygame.display.flip()
     clock.tick(60)

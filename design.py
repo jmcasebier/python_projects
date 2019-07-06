@@ -22,20 +22,6 @@ while x < 500:
     forward(55 + x)
     left(91)
 
-    '''
-    if x % 2 == 1:
-        circle((x // 5) + x)
-        left(45)
-        penup()
-        forward(x / 5)
-        pendown()
-    else:
-        forward(x * 2)
-        for i in range(5):
-            left(20)
-            forward(x)
-    '''
-
     x += 1
 
 hideturtle()
