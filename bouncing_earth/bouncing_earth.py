@@ -26,21 +26,20 @@ while 1:
     if earth_rect.top < 0 or earth_rect.bottom > height:
         speed[1] = -speed[1]
 
-    if speed == [2, 2]:
+    if speed == [2, 2] or speed == [-2, -2]:
         angle += -1
     if speed == [2, -2]:
         angle += 1
-    if speed == [-2, -2]:
-        angle += -1
     if speed == [-2, 2]:
         angle += -2
     angle %= 360
-    
-    rotated_earth = pygame.transform.rotate(earth, angle)
+
     earth_rect = earth_rect.move(speed)
+    rotated_earth = pygame.transform.rotate(earth, angle)
+    rotated_rect = rotated_earth.get_rect(center=earth_rect.center)
 
     screen.fill(black)
     screen.blit(space, space_rect)
-    screen.blit(rotated_earth, earth_rect)
+    screen.blit(rotated_earth, rotated_rect)
     pygame.display.flip()
     clock.tick(100)
