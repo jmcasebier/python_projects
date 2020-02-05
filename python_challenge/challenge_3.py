@@ -1260,3 +1260,5 @@ count = 0
 for match in nonsense:
     nononsense += match[4]
 print(nononsense)
+
+# ANSWER: linkedlist
