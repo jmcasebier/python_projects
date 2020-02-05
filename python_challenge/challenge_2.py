@@ -1224,3 +1224,5 @@ $#_}*!(+([_&%{^&[([%]}*^{{([@+@]@*&@_!]_+([(#&!]]#$$#]@#{_]][_{@]{*))$({%}_![@$]
 unmess = ''.join(filter(str.isalnum, mess))
 
 print(unmess)
+
+# ANSWER: equality
