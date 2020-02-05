@@ -11,3 +11,5 @@ for letter in encrypted:
     else:
         decrypted += chr(num)
 print(decrypted)
+
+# ANSWER: ocr
